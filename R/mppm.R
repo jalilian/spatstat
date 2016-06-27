@@ -54,7 +54,7 @@ mppm <- local({
     ##------  Trend Formula ------------------
     
     ## check all variables in trend formula are recognised
-    checkvars(formula, data.sumry$col.names, extra=c("x","y","id"), bname="data")
+    checkvars(formula, data.sumry$col.names, extra=c("x","y","id","marks"), bname="data")
     ## check formula has LHS and RHS. Extract them
     if(length(formula) < 3)
       stop(paste("Argument", sQuote("formula"),
